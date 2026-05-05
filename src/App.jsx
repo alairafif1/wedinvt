@@ -201,7 +201,7 @@ function AdminPage() {
           <div>
             <div className="section-kicker">Admin</div>
             <h1>Dashboard RSVP</h1>
-            <p>Kelola konfirmasi kehadiran dan ucapan tamu Idan & Mirna.</p>
+            <p>Kelola konfirmasi kehadiran dan ucapan tamu Jaden & Rania.</p>
           </div>
           <div className="admin-actions">
             <button className="ghost-button" type="button" onClick={fetchAdminData}>
@@ -242,7 +242,7 @@ function AdminPage() {
               type="button"
               onClick={() =>
                 downloadCsv(
-                  'rsvp-idan-mirna.csv',
+                  'rsvp-jaden-rania.csv',
                   rsvps.map((item) => ({
                     nama: item.guest_name,
                     status: attendanceLabels[item.attendance] ?? item.attendance,
@@ -288,7 +288,7 @@ function AdminPage() {
               type="button"
               onClick={() =>
                 downloadCsv(
-                  'ucapan-idan-mirna.csv',
+                  'ucapan-jaden-rania.csv',
                   adminMessages.map((item) => ({
                     nama: item.guest_name,
                     ucapan: item.message,
@@ -510,7 +510,7 @@ function WeddingInvitation() {
             <span />
             <span />
           </div>
-          <h1>Idan & Mirna</h1>
+          <h1>Jaden & Rania</h1>
           <p className="hero-copy">
             Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i
             untuk hadir dan memberikan doa restu pada hari pernikahan kami.
@@ -536,18 +536,18 @@ function WeddingInvitation() {
         <div className="couple-grid">
           <article className="couple-card">
             <div className="portrait portrait-groom" aria-hidden="true">
-              <span>I</span>
+              <span>J</span>
             </div>
             <p>Putra dari Bapak Wirawan & Ibu Niken Sekar</p>
-            <h3>Hazidan Hanafi</h3>
+            <h3>Jaden Bahtera</h3>
           </article>
           <div className="ampersand" aria-hidden="true">&</div>
           <article className="couple-card">
             <div className="portrait portrait-bride" aria-hidden="true">
-              <span>M</span>
+              <span>R</span>
             </div>
             <p>Putri dari Bapak Hadi Santoso & Ibu Sri Lestari</p>
-            <h3>Mirna Yustiana</h3>
+            <h3>Puteri Rania</h3>
           </article>
         </div>
       </section>
@@ -733,7 +733,7 @@ function WeddingInvitation() {
             <i />
             <i />
           </div>
-          <strong>Idan & Mirna</strong>
+          <strong>Jaden & Rania</strong>
           <small>Sabtu, 14 September 2026</small>
         </div>
       </section>
